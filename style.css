@@ -3,34 +3,45 @@ font-family:Arial;
 margin:0;
 background:#f4f6f8;
 color:#333;
+transition:0.4s;
+}
+
+.dark-mode{
+background:#0f172a;
+color:white;
 }
 
 header{
-background:#0f172a;
+background:#111827;
 color:white;
 text-align:center;
 padding:80px 20px;
 }
 
-.btn{
-display:inline-block;
+.header-buttons{
 margin-top:20px;
+}
+
+.btn{
 padding:12px 25px;
 background:#3b82f6;
 color:white;
 text-decoration:none;
 border-radius:6px;
+margin-right:10px;
+}
+
+#themeToggle{
+padding:10px 15px;
+border:none;
+border-radius:6px;
+cursor:pointer;
 }
 
 section{
 max-width:1000px;
 margin:auto;
 padding:60px 20px;
-}
-
-h2{
-text-align:center;
-margin-bottom:30px;
 }
 
 .skills-grid{
@@ -43,14 +54,6 @@ text-align:center;
 .skill i{
 font-size:40px;
 color:#3b82f6;
-}
-
-.card{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-radius:8px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 .project-grid{
@@ -66,11 +69,21 @@ border-radius:8px;
 box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
-#contact{
-text-align:center;
-background:#111827;
-color:white;
-padding:60px 20px;
+.project img{
+width:100%;
+border-radius:6px;
+margin-bottom:10px;
+}
+
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:all 1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
 }
 
 footer{
