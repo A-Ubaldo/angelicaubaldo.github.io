@@ -2,12 +2,13 @@
 // DARK MODE
 // =========================
 
-document.getElementById("themeToggle")
-.addEventListener("click", function(){
+const themeToggle = document.getElementById("themeToggle");
 
-    document.body.classList.toggle("dark-mode");
-
-});
+if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+    });
+}
 
 
 // =========================
@@ -20,23 +21,25 @@ const appearOptions = {
     threshold: 0.3
 };
 
-const appearOnScroll =
-new IntersectionObserver(function(entries, observer){
+const appearOnScroll = new IntersectionObserver(
+    function (entries, observer) {
 
-    entries.forEach(entry => {
+        entries.forEach(function (entry) {
 
-        if(!entry.isIntersecting){
-            return;
-        }
+            if (!entry.isIntersecting) {
+                return;
+            }
 
-        entry.target.classList.add("show");
-        observer.unobserve(entry.target);
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
 
-    });
+        });
 
-}, appearOptions);
+    },
+    appearOptions
+);
 
-faders.forEach(fader => {
+faders.forEach(function (fader) {
     appearOnScroll.observe(fader);
 });
 
@@ -45,22 +48,26 @@ faders.forEach(fader => {
 // WEBSITE GALLERY
 // =========================
 
-function openWebsiteGallery(){
+function openWebsiteGallery() {
 
-    document.getElementById("websiteGallery").style.display = "block";
+    const gallery = document.getElementById("websiteGallery");
 
-    // Prevent the main website from scrolling
-    document.body.style.overflow = "hidden";
+    if (gallery) {
+        gallery.style.display = "block";
+        document.body.style.overflow = "hidden";
+    }
 
 }
 
 
-function closeWebsiteGallery(){
+function closeWebsiteGallery() {
 
-    document.getElementById("websiteGallery").style.display = "none";
+    const gallery = document.getElementById("websiteGallery");
 
-    // Allow the main website to scroll again
-    document.body.style.overflow = "auto";
+    if (gallery) {
+        gallery.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
 
 }
 
@@ -69,12 +76,10 @@ function closeWebsiteGallery(){
 // CLOSE GALLERY WITH ESC KEY
 // =========================
 
-document.addEventListener("keydown", function(event){
+document.addEventListener("keydown", function (event) {
 
-    if(event.key === "Escape"){
-
+    if (event.key === "Escape") {
         closeWebsiteGallery();
-
     }
 
 });
