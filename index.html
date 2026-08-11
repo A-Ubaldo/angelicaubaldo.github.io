@@ -3,204 +3,237 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Angelica Ubaldo | Portfolio</title>
+    <title>Angelica Ubaldo | Portfolio</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
+    <!-- HEADER -->
 
-<h1>ANGELICA UBALDO</h1>
-<p>WEB AND SYSTEM DEVELOPER</p>
+    <header>
 
-<div class="header-buttons">
+        <h1>ANGELICA UBALDO</h1>
 
-<a href="resume.pdf" class="btn" target="_blank">
-View Resume
-</a>
+        <p>WEB AND SYSTEM DEVELOPER</p>
 
-<a href="resume.pdf" class="btn" download>
-Download Resume
-</a>
+        <div class="header-buttons">
 
-<button id="themeToggle">🌙</button>
+            <a href="resume.pdf" class="btn" target="_blank">
+                View Resume
+            </a>
 
-</div>
+            <a href="resume.pdf" class="btn" download>
+                Download Resume
+            </a>
 
-</header>
+            <button id="themeToggle">🌙</button>
 
+        </div>
 
-<section class="about fade">
+    </header>
 
-<h2>ABOUT ME</h2>
 
-<p>
-Information Technology graduate with experience in web development, IT support, and content moderation.
-Skilled in HTML, CSS, JavaScript, PHP, WordPress, and database management, with hands-on experience
-developing responsive websites and managing digital content. A fast learner who works well under pressure
-and adapts quickly in collaborative and remote work environments.
-</p>
+    <!-- ABOUT -->
 
-</section>
+    <section class="about fade">
 
+        <h2>ABOUT ME</h2>
 
-<section class="skills fade">
+        <p>
+            Information Technology graduate with experience in web development,
+            IT support, and content moderation. Skilled in HTML, CSS, JavaScript,
+            PHP, WordPress, and database management, with hands-on experience
+            developing responsive websites and managing digital content.
+            A fast learner who works well under pressure and adapts quickly
+            in collaborative and remote work environments.
+        </p>
 
-<h2>EXPERTISE</h2>
+    </section>
 
-<div class="skills-grid">
 
-<div class="skill">
-<i class="fa-solid fa-code"></i>
-<p>PROGRAMMING LANGUAGES</p>
-</div>
+    <!-- EXPERTISE -->
 
-<div class="skill">
-<i class="fa-brands fa-css3-alt"></i>
-<p>CSS</p>
-</div>
+    <section class="skills fade">
 
-<div class="skill">
-<i class="fa-brands fa-wordpress"></i>
-<p>WORDPRESS</p>
-</div>
+        <h2>EXPERTISE</h2>
 
-<div class="skill">
-<i class="fa-solid fa-database"></i>
-<p>DATABASE</p>
-</div>
+        <div class="skills-grid">
 
-<div class="skill">
-<i class="fa-solid fa-code-branch"></i>
-<p>CRUD SYSTEM</p>
-</div>
+            <div class="skill">
+                <i class="fa-solid fa-code"></i>
+                <p>PROGRAMMING LANGUAGES</p>
+            </div>
 
-<div class="skill">
-<i class="fa-solid fa-paintbrush"></i>
-<p>ADOBE</p>
-</div>
+            <div class="skill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
 
-<div class="skill">
-<i class="fa-solid fa-chart-line"></i>
-<p>DATA ANNOTATOR</p>
-</div>
+            <div class="skill">
+                <i class="fa-brands fa-wordpress"></i>
+                <p>WORDPRESS</p>
+            </div>
 
-</div>
+            <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <p>DATABASE</p>
+            </div>
 
-</section>
+            <div class="skill">
+                <i class="fa-solid fa-code-branch"></i>
+                <p>CRUD SYSTEM</p>
+            </div>
 
+            <div class="skill">
+                <i class="fa-solid fa-paintbrush"></i>
+                <p>ADOBE</p>
+            </div>
 
-<section class="projects fade">
+            <div class="skill">
+                <i class="fa-solid fa-chart-line"></i>
+                <p>DATA ANNOTATOR</p>
+            </div>
 
-<h2>PROJECTS</h2>
+        </div>
 
-<div class="project-grid">
+    </section>
 
-<!-- WEBSITES PROJECT -->
-<div class="project" onclick="openWebsiteGallery()">
 
-<img src="images/brims.jpg" alt="Website Project">
+    <!-- PROJECTS -->
 
-<h3>WEBSITES</h3>
+    <section class="projects fade">
 
-<p>Click to view website projects.</p>
+        <h2>PROJECTS</h2>
 
-</div>
+        <div class="project-grid">
 
 
-<!-- PHOTOSHOP PROJECT -->
-<div class="project">
+            <!-- WEBSITES -->
 
-<img src="images/project2.png" alt="Photoshop Design">
+            <div class="project" onclick="openWebsiteGallery()">
 
-<h3>Photoshop</h3>
+                <img src="images/brims.jpg"
+                     alt="Website Project">
 
-<p>Graphic design projects.</p>
+                <h3>WEBSITES</h3>
 
-</div>
+                <p>Click to view website projects.</p>
 
+            </div>
 
-<!-- CANVA PROJECT -->
-<div class="project">
 
-<img src="images/project3.png" alt="Canva Design">
+            <!-- PHOTOSHOP -->
 
-<h3>Canva</h3>
+            <div class="project">
 
-<p>Creative designs built using Canva.</p>
+                <img src="images/project2.png"
+                     alt="Photoshop Design">
 
-</div>
+                <h3>Photoshop</h3>
 
-</div>
+                <p>Graphic design projects.</p>
 
-</section>
+            </div>
 
 
-<!-- WEBSITE GALLERY -->
+            <!-- CANVA -->
 
-<div id="websiteGallery" class="gallery">
+            <div class="project">
 
-<span class="close" onclick="closeWebsiteGallery()">&times;</span>
+                <img src="images/project3.png"
+                     alt="Canva Design">
 
-<h2>MY WEBSITE PROJECTS</h2>
+                <h3>Canva</h3>
 
-<div class="gallery-images">
+                <p>Creative designs built using Canva.</p>
 
-<img src="images/brims.jpg" alt="Website Project">
+            </div>
 
-<img src="images/one.jpg" alt="Website Page 1">
+        </div>
 
-<img src="images/two.jpg" alt="Website Page 2">
+    </section>
 
-<img src="images/three.jpg" alt="Website Page 3">
 
-</div>
+    <!-- WEBSITE GALLERY POPUP -->
 
-</div>
+    <div id="websiteGallery">
 
+        <button class="close"
+                onclick="closeWebsiteGallery()">
+            &times;
+        </button>
 
-<section id="contact" class="fade">
 
-<h2>WORK WITH ME</h2>
+        <h2>MY WEBSITE PROJECTS</h2>
 
-<p>📧 angelicaubaldo957@gmail.com</p>
 
-<p>📱 0963-309-8045</p>
+        <div class="gallery-images">
 
-<p>
+            <img src="images/brims.jpg"
+                 alt="Website Project 1">
 
-<a href="https://www.linkedin.com/in/angelica-ubaldo-3b5508261"
-target="_blank">
-LinkedIn Profile
-</a>
+            <img src="images/one.jpg"
+                 alt="Website Project 2">
 
-<a href="https://workubaldo.my.canva.site/portfolio"
-target="_blank">
-Portfolio
-</a>
+            <img src="images/two.jpg"
+                 alt="Website Project 3">
 
-</p>
+            <img src="images/three.jpg"
+                 alt="Website Project 4">
 
-</section>
+        </div>
 
+    </div>
 
-<footer>
 
-<p>Angelica Ubaldo</p>
+    <!-- CONTACT -->
 
-</footer>
+    <section id="contact" class="fade">
 
+        <h2>WORK WITH ME</h2>
 
-<script src="script.js"></script>
+        <p>📧 angelicaubaldo957@gmail.com</p>
+
+        <p>📱 0963-309-8045</p>
+
+        <p>
+
+            <a href="https://www.linkedin.com/in/angelica-ubaldo-3b5508261"
+               target="_blank">
+                LinkedIn Profile
+            </a>
+
+            <a href="https://workubaldo.my.canva.site/portfolio"
+               target="_blank">
+                Portfolio
+            </a>
+
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>Angelica Ubaldo</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
 
 </body>
 
